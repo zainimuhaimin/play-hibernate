@@ -1,0 +1,25 @@
+@(implicit request: Http.Request)
+
+@main("Form Add Book") {
+<div class="container col-md-6">
+    <h1>Form Input Buku</h1>
+    <form class="row g-3" method="POST" action="@routes.BookController.insertBook()">
+        @helper.CSRF.formField
+        <div class="col-md-6">
+            <label for="namaBuku" class="form-label">Nama Buku</label>
+            <input name="namaBuku" type="text" class="form-control" id="namaBuku" placeholder="Nama Buku" required/>
+        </div>
+        <div class="col-md-6">
+            <label for="penerbit" class="form-label">Penerbit</label>
+            <input name="penerbit" type="text" class="form-control" id="penerbit" placeholder="Penerbit" required/>
+        </div>
+        <div class="col-12">
+            <label for="harga" class="form-label">Harga</label>
+            <input name="harga" type="number" class="form-control" id="harga" placeholder="Harga Buku" required/>
+        </div>
+        <div class="col-12">
+            <button id="submitBook" type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+</div>
+}

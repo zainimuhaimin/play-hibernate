@@ -1,0 +1,49 @@
+logs
+target
+/.bsp
+/.idea
+/.idea_modules
+/.classpath
+/.project
+/.settings
+/RUNNING_PID
+
+# SBT
+target/
+lib_managed/
+src_managed/
+project/boot/
+project/plugins/project/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+/out/
+
+# Eclipse
+.classpath
+.project
+/scala-2.11/
+
+# NetBeans
+nbproject/
+
+# Play specific
+logs/
+tmp/
+CACHE/
+dist/
+.rsync-tmp/
+
+# OS X
+.DS_Store
+
+# JDK
+*.log
+hot_deployment.log
+
+# User-specific files
+application.conf
+conf/application.conf
